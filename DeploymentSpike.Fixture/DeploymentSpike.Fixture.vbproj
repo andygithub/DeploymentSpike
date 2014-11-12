@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{374479F4-20BE-4AAF-9F10-A01DFB259E55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DeploymentSpike.Fixture</RootNamespace>
+    <AssemblyName>DeploymentSpike.Fixture</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DeploymentSpike.Fixture.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DeploymentSpike.Fixture.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Services.Logging.Log4netIntegration">
+      <HintPath>..\packages\Castle.Core-log4net.3.0.0.4003\lib\net40\Castle.Services.Logging.Log4netIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.3.0.0.4001\lib\net40\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6\lib\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.3.6.7\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="xunit">
+      <HintPath>..\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.extensions">
+      <HintPath>..\packages\xunit.extensions.1.9.1\lib\net20\xunit.extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DeploymentSpike.Interfaces" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Rhino.Mocks" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main\GenerateTaskReportFixture.vb" />
+    <Compile Include="Configuration\CommandLineArgumentManagerFixture.vb" />
+    <Compile Include="Configuration\ConfigurationSettingsManagerFixture.vb" />
+    <Compile Include="Configuration\TaskSettingsFactoryFixture.vb" />
+    <Compile Include="Configuration\TaskStepsFactoryFixture.vb" />
+    <Compile Include="Constants\FixtureConstants.vb" />
+    <Compile Include="Container\ContainerBootstrapFixture.vb" />
+    <Compile Include="Configuration\AssemblyManageFixture.vb" />
+    <Compile Include="Container\ContainerParameterGuardFixtures.vb" />
+    <Compile Include="Container\ContainerResolvingFixture.vb" />
+    <Compile Include="Container\InterceptionFixture.vb" />
+    <Compile Include="Container\SettingResolverFixture.vb" />
+    <Compile Include="Container\TaskSettingsInjectionInterceptorFixture.vb" />
+    <Compile Include="Domain\ConsoleLoggingFixture.vb" />
+    <Compile Include="Domain\TaskSettingsFixture.vb" />
+    <Compile Include="Configuration\LoggingFactoryFixture.vb" />
+    <Compile Include="MockTasks\ContainerMockTaskFailExecute.vb" />
+    <Compile Include="MockTasks\ContainerMockTaskFailValidate.vb" />
+    <Compile Include="Notifications\ConsoleNotifierFixture.vb" />
+    <Compile Include="Notifications\EmailNotifierFixture.vb" />
+    <Compile Include="Notifications\HtmlNotifierFixture.vb" />
+    <Compile Include="Provider\TimeProviderFixture.vb" />
+    <Compile Include="MockTasks\ContainerMockThirdTask.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings\SerializationISettingFixture.vb" />
+    <Compile Include="MockTasks\ContainerMockNotifications.vb" />
+    <Compile Include="MockTasks\ContainerMockTask.vb" />
+    <Compile Include="MockTasks\ContainerMockSecondTask.vb" />
+    <Compile Include="SystemTasks\ChangeIISDefaultFileFixture.vb" />
+    <Compile Include="SystemTasks\CopyArtifactsFromZipFixture.vb" />
+    <Compile Include="SystemTasks\CopyNewArtifactsFixture.vb" />
+    <Compile Include="SystemTasks\DatabaseBackupFixture.vb" />
+    <Compile Include="SystemTasks\ExecuteFileFixture.vb" />
+    <Compile Include="SystemTasks\ExecuteFolderFixture.vb" />
+    <Compile Include="SystemTasks\PurgeExistingArtifactsFixture.vb" />
+    <Compile Include="SystemTasks\RecycleApplicationPoolFixture.vb" />
+    <Compile Include="SystemTasks\RemoveDefaultPageFixture.vb" />
+    <Compile Include="SystemTasks\ResetIISFixture.vb" />
+    <Compile Include="SystemTasks\ScanLogFileFixture.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeploymentSpike.Interfaces\DeploymentSpike.Interfaces.vbproj">
+      <Project>{54C8A521-8F1E-41CC-8D9D-A411129E7CE1}</Project>
+      <Name>DeploymentSpike.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeploymentSpike.Notification\DeploymentSpike.Notification.vbproj">
+      <Project>{9C76B294-25A7-492B-A92C-F7BDEEC03035}</Project>
+      <Name>DeploymentSpike.Notification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeploymentSpike.SystemTasks\DeploymentSpike.Controller.vbproj">
+      <Project>{DD44934D-4BD5-45A1-944D-DD118F5BA410}</Project>
+      <Name>DeploymentSpike.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeploymentSpike.Tasks\DeploymentSpike.Tasks.vbproj">
+      <Project>{00B4118A-7813-45A5-A5CB-9F39D717B937}</Project>
+      <Name>DeploymentSpike.Tasks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

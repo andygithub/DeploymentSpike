@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AttemptingToResolveTask" xml:space="preserve">
+    <value>Attempting to Resolve Task:</value>
+  </data>
+  <data name="CompleetedLoadingTaskAssemblies" xml:space="preserve">
+    <value>Completed loading the Task Assemblies.</value>
+  </data>
+  <data name="ContainerDisposed" xml:space="preserve">
+    <value>Container Disposed</value>
+  </data>
+  <data name="DefaultLoggingTaskUsed" xml:space="preserve">
+    <value>A logging class was not registered so the default SystemTask logging will be used.</value>
+  </data>
+  <data name="DefaultNotificationTaskUsed" xml:space="preserve">
+    <value>A notification class was not registered so the default SystemTask notification will be used.</value>
+  </data>
+  <data name="EndingAssemblyScan" xml:space="preserve">
+    <value>Ending Assembly Scan</value>
+  </data>
+  <data name="ExcludedAssemblies" xml:space="preserve">
+    <value>The following assemblies are excluded:</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>Specified file was not found:</value>
+  </data>
+  <data name="InvalidAssembly" xml:space="preserve">
+    <value>Configured assembly was determined invalid:</value>
+  </data>
+  <data name="InvalidConfigurationAssembly" xml:space="preserve">
+    <value>Due to lack of configured assemblies the current directory will be scanned.</value>
+  </data>
+  <data name="ListAssembliesLoaded" xml:space="preserve">
+    <value>List of Assemblies Loaded</value>
+  </data>
+  <data name="LoadFailedToRetrieveSettings" xml:space="preserve">
+    <value>Load of Filed failed to retrieve settings:</value>
+  </data>
+  <data name="LoadingTaskAssemblies" xml:space="preserve">
+    <value>Loading the Task Assemblies.</value>
+  </data>
+  <data name="LogError" xml:space="preserve">
+    <value>ERROR: </value>
+  </data>
+  <data name="Logging" xml:space="preserve">
+    <value>Logging:</value>
+  </data>
+  <data name="LogTrace" xml:space="preserve">
+    <value>TRACE: </value>
+  </data>
+  <data name="LogWarning" xml:space="preserve">
+    <value>WARNING: </value>
+  </data>
+  <data name="MultipleLoggingRegistrations" xml:space="preserve">
+    <value>There are multiple logging registrations in the container.  The first registration will be resolved unless there was a configured component logging.</value>
+  </data>
+  <data name="NoLoggingConfigurations" xml:space="preserve">
+    <value>There is not a configured component logging.</value>
+  </data>
+  <data name="NoTasks" xml:space="preserve">
+    <value>No tasks were found to be executed.  </value>
+  </data>
+  <data name="NoTasksFound" xml:space="preserve">
+    <value>No tasks found.</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification:</value>
+  </data>
+  <data name="ProcessTaskList" xml:space="preserve">
+    <value>Attempting to resolve the tasks from the following configuration:</value>
+  </data>
+  <data name="ScanningAssembly" xml:space="preserve">
+    <value>Scanning Assembly:</value>
+  </data>
+  <data name="SettingsNotFound" xml:space="preserve">
+    <value>Settings not found</value>
+  </data>
+  <data name="StartingAssemblyScan" xml:space="preserve">
+    <value>Starting Assembly Scan</value>
+  </data>
+  <data name="TaskNameWasNull" xml:space="preserve">
+    <value>Task parameter name was null and returning empty settings.</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Tasks:</value>
+  </data>
+  <data name="NotifyTaskCompletedFailure" xml:space="preserve">
+    <value>The following task failed to complete:</value>
+  </data>
+  <data name="NotifyTaskCompletedSuccess" xml:space="preserve">
+    <value>The following task completed successfully: </value>
+  </data>
+  <data name="NotifyTaskStarted" xml:space="preserve">
+    <value>The following task has been started: </value>
+  </data>
+  <data name="ExceptionThrown" xml:space="preserve">
+    <value>Exception was thrown: </value>
+  </data>
+  <data name="ProcessHaltedException" xml:space="preserve">
+    <value>Due to the exception the process will be halted at this point.</value>
+  </data>
+  <data name="ProcessHaltedFailedTask" xml:space="preserve">
+    <value>The process was stopped due to a failed task status.</value>
+  </data>
+  <data name="TaskFailure" xml:space="preserve">
+    <value>A task exited with a failure status.  </value>
+  </data>
+  <data name="NoLocationUsed" xml:space="preserve">
+    <value>No Location used.</value>
+  </data>
+  <data name="TaskException" xml:space="preserve">
+    <value>The following exception was thrown when executing the task:</value>
+  </data>
+  <data name="ExecutionCompleted" xml:space="preserve">
+    <value>Execution Completed</value>
+  </data>
+  <data name="NotificationException" xml:space="preserve">
+    <value>Notification threw an exception.</value>
+  </data>
+  <data name="LoggedException" xml:space="preserve">
+    <value>"Exception: {0}.{1}"</value>
+  </data>
+  <data name="CalledMethod" xml:space="preserve">
+    <value>Called: {0}.{1} (</value>
+  </data>
+  <data name="ForComponent" xml:space="preserve">
+    <value> for: </value>
+  </data>
+  <data name="RegisteredComponent" xml:space="preserve">
+    <value>Registered: {0} - {1}</value>
+  </data>
+  <data name="ValidateTaskSettings" xml:space="preserve">
+    <value>Validate the task settings.</value>
+  </data>
+  <data name="ValidateTaskSettingsFailed" xml:space="preserve">
+    <value>Validation of task settings failed.</value>
+  </data>
+  <data name="DiagnosticFlagCheck" xml:space="preserve">
+    <value>Checking to see the value of the diagnostic flag.</value>
+  </data>
+  <data name="DiagnosticFlagSet" xml:space="preserve">
+    <value>Diagnostic flag is set and task will be exited before execution.</value>
+  </data>
+  <data name="TaskPause" xml:space="preserve">
+    <value>The task is configured to have a pause. Press enter to continue.</value>
+  </data>
+  <data name="TaskMetaInterceptor" xml:space="preserve">
+    <value>Updating the run time information in the meta settings.</value>
+  </data>
+  <data name="KernelMissingComponent" xml:space="preserve">
+    <value>Kernel does not contain component:</value>
+  </data>
+  <data name="TaskCompletion" xml:space="preserve">
+    <value>The task finished executing with a status of:</value>
+  </data>
+  <data name="Comma" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="StartingErrorHandling" xml:space="preserve">
+    <value>Starting Error Handling</value>
+  </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>An unhandled exception has taken place.  The process was halted when the exception took place.</value>
+  </data>
+  <data name="NotificationFailure" xml:space="preserve">
+    <value>The notification did not complete successfully.</value>
+  </data>
+  <data name="NotificationSuccess" xml:space="preserve">
+    <value>The notification completed successfully.</value>
+  </data>
+  <data name="FailedNotFired" xml:space="preserve">
+    <value>Task failed notification not fired due to configuration.</value>
+  </data>
+  <data name="StartedNotFired" xml:space="preserve">
+    <value>Task started notification not fired due to configuration.</value>
+  </data>
+  <data name="SuccessNotFired" xml:space="preserve">
+    <value>Task success notification not fired due to configuration.</value>
+  </data>
+  <data name="StartingNotificationInterception" xml:space="preserve">
+    <value>Starting Notification Interception.</value>
+  </data>
+  <data name="StartingErrorHandlingNotification" xml:space="preserve">
+    <value>Starting Error Handling for notification</value>
+  </data>
+  <data name="NotificationType" xml:space="preserve">
+    <value>Notification type: {0}</value>
+  </data>
+  <data name="ValidateNotificationSettings" xml:space="preserve">
+    <value>Validate the notification settings.</value>
+  </data>
+  <data name="ValidateNotificationSettingsFailed" xml:space="preserve">
+    <value>Validation of notification settings failed.</value>
+  </data>
+  <data name="ValidateNotificationSettingsSucceeded" xml:space="preserve">
+    <value>Validation of notification settings succeeded.</value>
+  </data>
+  <data name="ValidateTaskSettingsSucceeded" xml:space="preserve">
+    <value>Validation of task settings succeeded.</value>
+  </data>
+  <data name="StartingTaskSettingsInjectionInterceptor" xml:space="preserve">
+    <value>Starting TaskSettingsInjectionInterceptor</value>
+  </data>
+  <data name="ResolveSettingsAttempt" xml:space="preserve">
+    <value>Attempting to resolve settings for item:</value>
+  </data>
+  <data name="GeneratingDefaultSettings" xml:space="preserve">
+    <value>Generating default settings.</value>
+  </data>
+  <data name="UsingResultsFrom" xml:space="preserve">
+    <value>Using results from:</value>
+  </data>
+</root>
